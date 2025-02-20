@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+h2 {
+    font-family: "Roboto Condensed", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: "Roboto Condensed", serif;
+}
