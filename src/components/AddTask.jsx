@@ -1,7 +1,6 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
   
-const AddTask = ({items1, items2, setItems1})=> {
-    const [bandera, setBandera] = useState(false)
+const AddTask = ({items1, items2, setItems1, setBandera})=> {
 
     //Agregar una tarea
     const handleTask = ()=> {
@@ -27,7 +26,6 @@ const AddTask = ({items1, items2, setItems1})=> {
                 <input type="text" ref={inputRef} placeholder="Escribe algo.." className="p-2 border-2 border-[#c2c2c2] rounded-md text-white placeholder:text-white focus:outline-0"/>
                 <button className="px-3 cursor-pointer border-2 border-[#c2c2c2] text-white p-1 rounded-2xl hover:bg-[#c2c2c2] hover:text-black transition-all" onClick={handleTask}>Agregar</button>
             </div>
-            <p className={`text-amber-300 ${!bandera && "hidden"}`}>Esta tarea ya se encuentra en la lista</p>
         </div>
     )
 }
