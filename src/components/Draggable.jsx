@@ -41,7 +41,7 @@ const Draggable = ({ id, children, handleNameTask, handleDeleteTask, state }) =>
   };
 
   return (
-    <div className="m-1 flex justify-between gap-2 relative">
+    <div className="m-1 flex justify-between gap-2 relative touch-none select-none">
       {!isDragging && (
         <div className="flex absolute right-1 top-2.5">
           <img
