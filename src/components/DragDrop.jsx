@@ -21,8 +21,10 @@ const DragDrop = ({items1, items2, setItems1, setItems2, setBandera}) => {
 
     //Funcion para editar el nombre de una tarea
     const handleNameTask = (newName, oldName)=> {
-        const result1 = items1.some(element => element == oldName)
-        const result2 = items2.some(element => element == oldName)
+        console.log(oldName)
+        const result1 = items1.some(element => element == newName)
+        const result2 = items2.some(element => element == newName)
+        console.log(items1, result1, result2)
 
         if (result1 == false && result2 == false) {
             const result3 = items1.findIndex(element => element == oldName)
